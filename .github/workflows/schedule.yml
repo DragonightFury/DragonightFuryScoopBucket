@@ -1,16 +1,16 @@
 on:
   schedule:
-  - cron: '* * * * *'
+  - cron: '0 20 * * *'
   workflow_dispatch:
 name: Excavator
 jobs:
   excavate:
     name: Excavator
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
     - name: Excavate
-      uses: Ash258/Scoop-GithubActions@stable-win
+      uses: 42wim/Scoop-GithubActions@wim
       env:
         GITH_EMAIL: denisnosach77@gmail.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
