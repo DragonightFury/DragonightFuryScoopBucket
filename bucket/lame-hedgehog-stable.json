@@ -5,10 +5,10 @@
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://go.microsoft.com/fwlink/?LinkID=2093437#MicrosoftEdgeEnterpriseX64.msi_"
+            "url": "https://go.microsoft.com/fwlink/?LinkID=2093437"
         },
         "32bit": {
-            "url": "https://go.microsoft.com/fwlink/?LinkID=2093505#MicrosoftEdgeEnterpriseX86.msi_"
+            "url": "https://go.microsoft.com/fwlink/?LinkID=2093505"
         }
     },
     "installer": {
