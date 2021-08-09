@@ -5,16 +5,16 @@
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://go.microsoft.com/fwlink/?LinkID=2093437"
+            "url": "https://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_"
         },
         "32bit": {
-            "url": "https://go.microsoft.com/fwlink/?LinkID=2093505"
+            "url": "https://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_"
         }
     },
     "installer": {
-        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\MicrosoftEdgeEnterpriseX64.msi_`\" /quiet\" -Verb RunAs"
+        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /q\" -Verb RunAs"
     },
     "uninstaller": {
-        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\MicrosoftEdgeEnterpriseX64.msi_`\" /quiet\" -Verb RunAs"
+        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\setup.msi_`\" /q\" -Verb RunAs"
     }
 }
