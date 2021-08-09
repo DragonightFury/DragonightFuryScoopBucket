@@ -1,4 +1,3 @@
-
 {
     "version": "stable",
     "description": "Web browser developed by Microsoft.",
@@ -6,10 +5,10 @@
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "http://go.microsoft.com/fwlink/?LinkID=2093437"
+            "url": "https://go.microsoft.com/fwlink/?LinkID=2093437#MicrosoftEdgeEnterpriseX64.msi_"
         },
         "32bit": {
-            "url": "http://go.microsoft.com/fwlink/?LinkID=2093505"
+            "url": "https://go.microsoft.com/fwlink/?LinkID=2093505#MicrosoftEdgeEnterpriseX86.msi_"
         }
     },
     "installer": {
