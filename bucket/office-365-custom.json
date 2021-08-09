@@ -1,5 +1,5 @@
 {
-    "version": "office",
+    "version": "13426-20370",
     "description": "Family of client software, server software and services developed by Microsoft. This package includes custom config file.",
     "homepage": "https://www.office.com/",
     "license": "Proprietary",
@@ -43,9 +43,9 @@
     },
     "checkver": {
         "url": "https://www.microsoft.com/en-au/download/confirmation.aspx?id=49117",
-        "regex": "https://download\\.microsoft\\.com/download/(?<path>[\\w-/]+)/(?<version>office)deploymenttool_(?<build>[\\d-]+)\\.exe"
+        "regex": "https://download\\.microsoft\\.com/download/(?<path>[\\w-/]+)/officedeploymenttool_(?<version>[\\d-]+)\\.exe"
     },
-    "autoupdate": {
-        "url": "https://download.microsoft.com/download/$matchPath/officedeploymenttool_$matchBuild.exe#/dl.7z"
+    "autoupdate": {    
+        "url": "https://download.microsoft.com/download/$matchPath/officedeploymenttool_$version.exe#/dl.7z"
     }
 }
