@@ -3,11 +3,15 @@
     "description": "Web browser developed by Microsoft.",
     "homepage": "https://www.microsoftedgeinsider.com/",
     "license": "Freeware",
-    "url": "http://go.microsoft.com/fwlink/?LinkID=2093437"
+    "architecture": {
+        "64bit": {
+            "url": "http://go.microsoft.com/fwlink/?LinkID=2093437"
+        }
+    },
     "installer": {
-        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\MicrosoftEdgeEnterpriseX64.msi_`\" /q\" -Verb RunAs"
+        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\MicrosoftEdgeEnterpriseX64.msi_`\" /quiet\" -Verb RunAs"
     },
     "uninstaller": {
-        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\MicrosoftEdgeEnterpriseX64.msi_`\" /q\" -Verb RunAs"
+        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\MicrosoftEdgeEnterpriseX64.msi_`\" /quiet\" -Verb RunAs"
     }
 }
