@@ -1,10 +1,10 @@
 {
-    "version": "13426-20370",
+    "version": "14131-20278",
     "description": "Family of client software, server software and services developed by Microsoft. This package includes custom config file.",
     "homepage": "https://www.office.com/",
     "license": "Proprietary",
-    "url": "https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_13426-20370.exe#/dl.7z",
-    "hash": "029f5429ad105b3f7af144f535b6e6e6679c09c4b5ec5056b08bff41b92e6c07",
+    "url": "https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_14131-20278.exe#/dl.7z",
+    "hash": "5675fb5d9f28b55dbf8aaa603993ef8bb98e621432269bb004d238e3c473edbf",
     "architecture": {
         "64bit": {
             "pre_install": [
@@ -45,7 +45,7 @@
         "url": "https://www.microsoft.com/en-au/download/confirmation.aspx?id=49117",
         "regex": "https://download\\.microsoft\\.com/download/(?<path>[\\w-/]+)/officedeploymenttool_(?<version>[\\d-]+)\\.exe"
     },
-    "autoupdate": {    
+    "autoupdate": {
         "url": "https://download.microsoft.com/download/$matchPath/officedeploymenttool_$version.exe#/dl.7z"
     }
 }
