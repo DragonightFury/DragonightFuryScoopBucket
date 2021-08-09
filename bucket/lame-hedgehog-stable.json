@@ -17,3 +17,4 @@
     "uninstaller": {
         "script": "Start-Process -Wait msiexec \"/x `\"$dir\\MicrosoftEdgeSetup.exe_`\" /q\" -Verb RunAs"
     }
+}
