@@ -1,3 +1,4 @@
+
 {
     "version": "stable",
     "description": "Web browser developed by Microsoft.",
@@ -6,6 +7,9 @@
     "architecture": {
         "64bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093437"
+        },
+        "32bit": {
+            "url": "http://go.microsoft.com/fwlink/?LinkID=2093505"
         }
     },
     "installer": {
