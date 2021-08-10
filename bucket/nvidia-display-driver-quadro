@@ -1,5 +1,5 @@
 {
-    "version": "392.67",
+    "version": "392.65",
     "description": "NVIDIA display driver.",
     "homepage": "https://www.nvidia.com/Download/index.aspx",
     "license": "Freeware",
@@ -12,8 +12,7 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://ru.download.nvidia.com/Windows/Quadro_Certified/392.67/392.67-quadro-desktop-notebook-win10-64bit-international-whql.exe",
-            "hash": "609929a849b9182f93571f140a35ef6ea10a7f19dbe02d329e719c6100924771"
+            "url": "https://ru.download.nvidia.com/Windows/Quadro_Certified/392.65/392.65-quadro-desktop-notebook-win10-64bit-international-whql.exe",
         }
     },
     "installer": {
@@ -48,7 +47,7 @@
         ]
     },
     "checkver": {
-        "url": "https://www.nvidia.com/Download/processFind.aspx?psid=74&pfid=659&osid=57&lid=1&whql=1&lang=en-us",
+        "url": "https://www.nvidia.com/Download/processFind.aspx?psid=74&pfid=659&osid=57",
         "regex": ">([\\d.]{6})<"
     },
     "autoupdate": {
