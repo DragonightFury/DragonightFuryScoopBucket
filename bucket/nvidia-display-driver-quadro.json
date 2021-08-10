@@ -48,7 +48,7 @@
     },
     "checkver": {
         "url": "https://www.nvidia.com/Download/processFind.aspx?psid=74&pfid=659&osid=57",
-        "regex": ">([\\d.]{6})<"
+        "regex": "[0-9]*\.[0-9]+"
     },
     "autoupdate": {
         "architecture": {
