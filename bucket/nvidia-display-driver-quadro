@@ -12,7 +12,7 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://ru.download.nvidia.com/Windows/Quadro_Certified/392.65/392.65-quadro-desktop-notebook-win10-64bit-international-whql.exe",
+            "url": "https://ru.download.nvidia.com/Windows/Quadro_Certified/392.65/392.65-quadro-desktop-notebook-win10-64bit-international-whql.exe"
         }
     },
     "installer": {
@@ -48,7 +48,7 @@
     },
     "checkver": {
         "url": "https://www.nvidia.com/Download/processFind.aspx?psid=74&pfid=659&osid=57",
-        "regex": "R[0-9]+ U[0-9]+ >([\\d.]{6})<"
+        "regex": ">([\\d.]{6})<"
     },
     "autoupdate": {
         "architecture": {
