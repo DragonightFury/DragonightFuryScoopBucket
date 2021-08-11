@@ -17,7 +17,7 @@
     },
     "uninstaller": {
         "script": "Start-Process -Wait msiexec \"/x `\"$dir\\setup.msi_`\" /q\" -Verb RunAs"
-    }
+    },
     "autoupdate": {
         "url": "https://7-zip.org/a/7z$cleanVersion-x64.msi"
     }
