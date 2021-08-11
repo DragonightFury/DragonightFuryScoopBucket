@@ -3,12 +3,10 @@
     "description": "A messaging app with a focus on speed and security",
     "homepage": "https://telegram.org",
     "license": "GPL-3.0-only",
-    "url": "https://updates.tdesktop.com/tx64/tsetup-x64.2.9.2.exe",
+    "url": "https://updates.tdesktop.com/tx64/tsetup-x64.2.9.2.exe#/setup.exe",
     "installer": {
-        "file": "tsetup-x64.$version.exe",
-        "args": [
-            "/VERYSILENT"
-        ]
+        "file": "setup.exe",
+        "args": "/VERYSILENT"
     },
     "persist": "tdata",
     "checkver": {
