@@ -6,8 +6,8 @@
         "identifier": "MIT",
         "url": "https://github.com/picotorrent/picotorrent/blob/master/LICENSE"
     },
-    "url": "https://github.com/picotorrent/picotorrent/releases/download/v0.25.0/PicoTorrent-0.25.0-x64.exe#/setup.exe"
-    "hash": "375c2445db76b7d51b7cd351b1c5b40f895fb15b502da6073e19aaf6cb08cd76"
+    "url": "https://github.com/picotorrent/picotorrent/releases/download/v0.25.0/PicoTorrent-0.25.0-x64.exe#/setup.exe",
+    "hash": "375c2445db76b7d51b7cd351b1c5b40f895fb15b502da6073e19aaf6cb08cd76",
     "installer": {
         "file": "setup.exe",
         "args": [
