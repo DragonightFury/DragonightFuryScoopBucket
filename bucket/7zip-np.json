@@ -6,14 +6,14 @@
         "identifier": "Freeware,LGPL-2.0-only,BSD-3-Clause",
         "url": "https://www.7-zip.org/license.txt"
     },
-    "url": "https://7-zip.org/a/7z1900-x64.msi#/setup.msi",
+    "url": "https://7-zip.org/a/7z1900-x64.msi#/setup.msi_",
     "hash": "a7803233eedb6a4b59b3024ccf9292a6fffb94507dc998aa67c5b745d197a5dc",
     "checkver": {
         "url": "https://www.7-zip.org/download.html",
         "regex": "Download 7-Zip ([\\d.]+)"
     },
     "installer": {
-        "file": "setup.msi",
+        "file": "setup.msi_",
         "args": "/q"
     },
     "autoupdate": {
