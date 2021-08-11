@@ -3,16 +3,11 @@
     "description": "Web browser developed by Microsoft.",
     "homepage": "https://www.microsoftedgeinsider.com/",
     "license": "Freeware",
-    "architecture": {
-        "64bit": {
-            "url": "https://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_"
-        },
-        "32bit": {
-            "url": "https://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_"
-        }
-    },
+    "url": "https://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_"
     "installer": {
-        "file": "setup.msi",
-        "args": "/q"
+        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /q\" -Verb RunAs"
+    },
+    "uninstaller": {
+        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\setup.msi_`\" /q\" -Verb RunAs"
     }
 }
