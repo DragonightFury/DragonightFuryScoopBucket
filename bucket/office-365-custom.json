@@ -5,11 +5,11 @@
     "license": "Proprietary",
     "url": "https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_14131-20278.exe#/dl.7z",
     "hash": "5675fb5d9f28b55dbf8aaa603993ef8bb98e621432269bb004d238e3c473edbf",
-    "pre_install": {
+    "pre_install": [
         "$null, $bucket = find_manifest($app)",
         "$bucketdir = Find-BucketDirectory($bucket)",
         "Copy-Item \"$bucketdir\\..\\scripts\\office-365-config.xml\" -Destination \"$dir\\office-365-config.xml\""
-    },
+    ],
     "installer": {
         "file": "setup.exe",
         "args": [
