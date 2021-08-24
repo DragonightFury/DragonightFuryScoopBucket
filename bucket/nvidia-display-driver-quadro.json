@@ -16,6 +16,7 @@
         "script": [
             "$service_disabled = (Get-CimInstance win32_service -Filter \"name='NVDisplay.ContainerLocalSystem'\").StartMode -eq 'Disabled'",
             "",
+            "PAUSE",
             "New-Item \"$dir\\extract\" -ItemType Directory | Out-Null",
             "Move-Item \"$dir\\*\" -Exclude \"extract\" -Destination \"$dir\\extract\"",
             "New-Item \"$dir\\setup\" -ItemType Directory | Out-Null",
