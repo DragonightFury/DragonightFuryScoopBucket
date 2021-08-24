@@ -10,7 +10,7 @@
         "$ Stop-Service NVDisplay.ContainerLocalSystem",
         "$ Set-Service NVDisplay.ContainerLocalSystem -StartupType Disabled"
     ],
-    "url": "https://ru.download.nvidia.com/Windows/Quadro_Certified/392.67/392.67-quadro-desktop-notebook-win10-64bit-international-whql.exe",
+    "url": "https://ru.download.nvidia.com/Windows/Quadro_Certified/392.67/392.67-quadro-desktop-notebook-win10-64bit-international-whql.exe#/dl.7z",
     "hash": "609929a849b9182f93571f140a35ef6ea10a7f19dbe02d329e719c6100924771",
     "installer": {
         "script": [
