@@ -1,13 +1,47 @@
 {
-    "version": "stable",
-    "description": "Web browser developed by Microsoft.",
-    "homepage": "https://www.microsoftedgeinsider.com/",
-    "license": "Freeware",
-    "url": "https://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
-    "installer": {
-        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /q\" -Verb RunAs"
+    "version": "94.0.992.31",
+    "description": "Fast, secure, and free web browser, built for the modern web based",
+    "homepage": "https://www.microsoft.com/en-us/edge",
+    "license": {
+        "identifier": "Proprietary Software"
     },
-    "uninstaller": {
-        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\setup.msi_`\" /q\" -Verb RunAs"
+    "architecture": {
+        "64bit": {
+            "url": "http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/bf4c405e-734a-460f-8a1c-e8d98352f064?P1=1633145574&P2=404&P3=2&P4=Aj8Iui9lxo58lX9b%2b%2f0tm6L1SqGivJcx27eZgrreR0sypmtYUMv5Z1RrnmpUDYtUuEoH2lQheRU7vpmDmv%2bqOQ%3d%3dbQ%3d%3d#/dl.7z",
+            "hash": "c33d0ecd30ada952204bed35da2277ffd4586a5e2c9008442024a56f3b1c9f1d"
+        }
+    },
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\MSEDGE.7z\" -ExtractDir 'Chrome-bin' -Removal",
+        "Rename-Item \"$dir\\$version\" \"$dir\\current\" "
+    ],
+    "bin": [
+        [
+            "current\\msedge.exe",
+            "msedge-stable",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "shortcuts": [
+        [
+            "current\\msedge.exe",
+            "Edge Stable",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "persist": "User Data",
+    "checkver": {
+        "url": "https://42wim.github.io/edgeupdates/stable.txt",
+        "regex": "(?sm)(?<version>(.*?)):http://(?<64>(.*))"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://$match64#/dl.7z",
+                "hash": {
+                    "url": "https://42wim.github.io/edgeupdates/stable.sha256"
+                }
+            }
+        }
     }
 }
