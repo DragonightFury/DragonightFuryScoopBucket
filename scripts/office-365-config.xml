@@ -1,11 +1,11 @@
-<Configuration ID="82671429-934b-4561-b907-8713989fcf10">
+<Configuration ID="3ccafc25-2dba-44be-9313-4734956fcc2c">
   <Add OfficeClientEdition="64" Channel="Current">
     <Product ID="O365ProPlusRetail">
       <Language ID="ru-ru" />
-      <ExcludeApp ID="Access" />
       <ExcludeApp ID="Groove" />
       <ExcludeApp ID="Lync" />
       <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="OneNote" />
       <ExcludeApp ID="Outlook" />
       <ExcludeApp ID="Teams" />
       <ExcludeApp ID="Bing" />
@@ -21,5 +21,4 @@
   <Property Name="FORCEAPPSHUTDOWN" Value="FALSE" />
   <Property Name="DeviceBasedLicensing" Value="0" />
   <Updates Enabled="FALSE" />
-  <Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
