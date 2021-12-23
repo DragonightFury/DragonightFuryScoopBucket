@@ -1,47 +1,13 @@
 {
-    "version": "96.0.1054.62",
-    "description": "Fast, secure, and free web browser, built for the modern web based",
-    "homepage": "https://www.microsoft.com/en-us/edge",
-    "license": {
-        "identifier": "Proprietary Software"
+    "version": "stable",
+    "description": "Web browser developed by Microsoft.",
+    "homepage": "https://www.microsoftedgeinsider.com/",
+    "license": "Freeware",
+    "url": "https://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
+    "installer": {
+        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /q\" -Verb RunAs"
     },
-    "architecture": {
-        "64bit": {
-            "url": "http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/f24bd01a-36ef-4303-a4c5-0607d95ae0f4?P1=1640403464&P2=404&P3=2&P4=CoUHPFMGMoMBZzq12JIPlGL%2bA9xZlskcgAWtc8s4KnPO%2fJUtLrgbEzrrd60zwz4bK0drlmWwKlbq8ZlHyGNR3g%3d%3d3d3d3d%3d#/dl.7z",
-            "hash": "3191df130f9e3c33cff3cd7df2713c1e93ffc43dc06285131ac1318bdae07c4b"
-        }
-    },
-    "pre_install": [
-        "Expand-7zipArchive \"$dir\\MSEDGE.7z\" -ExtractDir 'Chrome-bin' -Removal",
-        "Rename-Item \"$dir\\$version\" \"$dir\\current\" "
-    ],
-    "bin": [
-        [
-            "current\\msedge.exe",
-            "msedge-stable",
-            "--user-data-dir=\"$dir\\User Data\""
-        ]
-    ],
-    "shortcuts": [
-        [
-            "current\\msedge.exe",
-            "Edge Stable",
-            "--user-data-dir=\"$dir\\User Data\""
-        ]
-    ],
-    "persist": "User Data",
-    "checkver": {
-        "url": "https://42wim.github.io/edgeupdates/stable.txt",
-        "regex": "(?sm)(?<version>(.*?)):http://(?<64>(.*))"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "http://$match64#/dl.7z",
-                "hash": {
-                    "url": "https://42wim.github.io/edgeupdates/stable.sha256"
-                }
-            }
-        }
+    "uninstaller": {
+        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\setup.msi_`\" /q\" -Verb RunAs"
     }
 }
