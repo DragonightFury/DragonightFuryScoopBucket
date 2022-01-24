@@ -7,5 +7,5 @@
     "installer": {
         "file": "NordVPNSetup_x64.exe",
         "args": "/VERYSILENT"
-    },
+    }
 }
