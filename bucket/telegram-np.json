@@ -6,7 +6,7 @@
     "url": "https://updates.tdesktop.com/tx64/tsetup-x64.3.4.8.exe",
     "hash": "4fb4709544e9ec35ce47ae24ca63c4149cbf29545bdf233d01f5153fd03124ba",
     "installer": {
-        "file": "setup.exe",
+        "file": "tsetup-x64.$version.exe",
         "args": "/VERYSILENT"
     },
     "persist": "tdata",
