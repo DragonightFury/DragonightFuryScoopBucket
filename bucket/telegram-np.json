@@ -1,10 +1,10 @@
 {
-    "version": "3.7.1",
+    "version": "3.7.2",
     "description": "A messaging app with a focus on speed and security",
     "homepage": "https://telegram.org",
     "license": "GPL-3.0-only",
-    "url": "https://updates.tdesktop.com/tx64/tsetup-x64.3.7.1.exe#/telegram.exe",
-    "hash": "a7f79d238db743af6c5ed755e65381f35538b62330bf317b233b204e0b43da59",
+    "url": "https://updates.tdesktop.com/tx64/tsetup-x64.3.7.2.exe",
+    "hash": "616e249b454dcd51c2dd250b573a33268fe3b22ead16b43a674d196db8e314a2",
     "installer": {
         "file": "telegram.exe",
         "args": "/VERYSILENT"
