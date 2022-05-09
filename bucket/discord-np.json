@@ -11,7 +11,7 @@
     },
     "checkver": {
         "url": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86",
-        "regex": "https://dl\.discordapp\.net/distro/app/stable/win/x86/(?<version>[0-9]+(\.[0-9]+)+)/DiscordSetup\.exe"
+        "regex": "https://dl\\.discordapp\\.net/distro/app/stable/win/x86/(?<version>[0-9]+(\\.[0-9]+)+)/DiscordSetup\\.exe"
 
     },
     "autoupdate": {
