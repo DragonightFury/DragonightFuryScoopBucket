@@ -7,4 +7,5 @@
     "installer": {
         "file": "DiscordSetup.exe",
         "args": "-s"
+    }
 }
