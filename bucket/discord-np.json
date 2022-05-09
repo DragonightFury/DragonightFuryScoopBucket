@@ -1,20 +1,10 @@
 {
-    "version": "1.0.9003",
+    "version": "stable",
     "description": "A messaging app with a focus on speed and security",
     "homepage": "https://discord.org",
     "license": "GPL-3.0-only",
-    "url": "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9003/DiscordSetup.exe",
-    "hash": "c6bd3da755f382466610ed96d363e701cf044819b925684896af26b797abaa6d",
+    "url": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86#/DiscordSetup.exe",
     "installer": {
         "file": "DiscordSetup.exe",
         "args": "-s"
-    },
-    "checkver": {
-        "url": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86",
-        "regex": "https://dl\\.discordapp\\.net/distro/app/stable/win/x86/(?:v|V)?([\\d.-]+)/DiscordSetup\\.exe"
-
-    },
-    "autoupdate": {
-        "url": "https://dl.discordapp.net/distro/app/stable/win/x86/$version/DiscordSetup.exe"
-    }
 }
